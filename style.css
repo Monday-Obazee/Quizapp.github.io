@@ -6,7 +6,7 @@ body{
 *{
     box-sizing: border-box;
 }
-.quiz-container{
+.container{
     max-width: 700px;
     min-height: 500px;
     background-color: #000000;
@@ -16,12 +16,12 @@ body{
     box-sizing: border-box;
     border: 1px solid #fff;
     position: relative;
-    box-shadow: 0 14px 28px #000, 0 10px 10px #fff;
+    box-shadow: 5px 5px 5px 10px #fff, 5px 5px 5px 10px #000;
     
     
 }
 
-.quiz-container::after,.quiz-container::before{
+.container::after,.container::before{
     content: '';
     clear: both;
     display: table;
@@ -40,7 +40,7 @@ h3,span{
 }
 .question{
     font-size: 22px;
-    color: red;
+    color: white;
     padding: 20px 0;
 }
 .options div{
@@ -76,17 +76,7 @@ h3,span{
     background-color: green;
     z-index: -1;
     transition: all 0.3s ease-in-out;
-    /* animation: animateBackground 1s ease ;
-    animation-fill-mode: forward; */
 }
-/* @keyframes animateBackground{
-    0%{
-        transform: translatex(-100%);
-    }
-    100%{
-        transform: translatex(0%);
-    }
-} */
 .options div.wrong{
     z-index: 1;
     color:#fff
@@ -101,18 +91,7 @@ h3,span{
     background-color: red;
     z-index: -1;
     transition: all 0.3s ease-in-out;
-    /* animation: animateBackground 1s ease ;
-    animation-fill-mode: none; */
 }
-/* @keyframes animateBackground{
-    0%{
-        transform: translatex(-100%);
-    }
-    100%{
-        transform: translatex(0%);
-    }
-} */
-
 .button .btn{
     padding: 15px 50px;
     border-radius: 5px;
@@ -122,7 +101,8 @@ h3,span{
     color: #ffffff;
     border: 1px solid #fff;
     display: inline-block;
-    margin: 15px 0;
+    margin: 40px;
+    
 }
 .answers-tracker{
     border-top: 1px solid #ccc;
@@ -213,13 +193,13 @@ h3,span{
 
 /* css to handle dark mode */
 
-.dark.quiz-container{
+.dark.container{
     background-color: #fff;
     transition: all 0.3s ease-in-out;
     color: #fff;
 }
-.dark .quiz-container .question{
-    color: white;
+.dark .question{
+    color: black;
     font-size: 16px;
 }
 .dark .dark-mode .inside-circle{
@@ -237,8 +217,10 @@ h3,span{
     color: #000;
 }
 
+/* media quries for responsive */
+
 @media(max-width: 1080px){
-    .quiz-container{
+    .container{
         margin: 50px 40px;
     }
     .options div{

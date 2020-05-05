@@ -15,7 +15,7 @@ let myArr = [];
 const spanElement = document.querySelector(".span-element");
 let score=0;
 let darkMode = document.querySelector(".dark-mode");
-let quizContainer = document.querySelector(".quiz-container");
+let quizContainer = document.querySelector(".container");
 
 
 // array of questions
