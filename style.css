@@ -101,7 +101,7 @@ h3,span{
     color: #ffffff;
     border: 1px solid #fff;
     display: inline-block;
-    margin: 40px;
+    margin-top: 30px;
     
 }
 .answers-tracker{
@@ -125,22 +125,28 @@ h3,span{
 }
 
 .quiz-over{
-    position: fixed;
-    left: 100px;
-    top: 100px;
+    position: absolute;
+    left: 120px;
+    top: 120px;
     width: 50%;
     height: 50%;
     z-index: 10;
     display: none;
     align-items: center;
     justify-content: center;
+    text-align: center;
     
 }
 .quiz-over span{
     color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 .quiz-over.show{
     display: flex;
+    justify-content: center;
 }
 
 .quiz-over .box{
@@ -148,8 +154,9 @@ h3,span{
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    flex-basis: 700px;
-    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .quiz-over .box button{
